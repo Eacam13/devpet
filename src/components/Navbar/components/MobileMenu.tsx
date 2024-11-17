@@ -55,7 +55,7 @@ const MobileMenu = ({ links }: MobileMenuProps) => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="absolute top-16 left-0 right-0 bg-white shadow-lg py-2"
+            className="fixed top-16 left-0 w-full bg-white shadow-lg py-2 z-50"
           >
             {links.map((link, index) => (
               <Link

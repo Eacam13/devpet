@@ -16,7 +16,7 @@ const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <header className="fixed w-full bg-white shadow-md z-50">
+    <header className="fixed w-full bg-white shadow-md z-50 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -26,7 +26,8 @@ const Navbar = () => {
               alt="DevPet Logo"
               width={300}
               height={100}
-              className="w-auto h-20"
+              className="w-auto h-[50px] sm:h-20"
+              priority
             />
           </Link>
 

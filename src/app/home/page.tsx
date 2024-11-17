@@ -134,7 +134,7 @@ export default function Home() {
               className='relative'
             >
               <Image 
-                src='/fotohome.png' 
+                src='/fotoHome.png' 
                 alt='Cachorro feliz' 
                 width={600} 
                 height={400} 
