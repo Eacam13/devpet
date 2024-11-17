@@ -39,12 +39,12 @@ const MobileMenu = ({ links }: MobileMenuProps) => {
     <div className="md:hidden">
       <button
         onClick={toggleMenu}
-        className="text-gray-600 hover:text-gray-900 focus:outline-none"
+        className="text-gray-600 hover:text-gray-900 focus:outline-none p-2"
       >
         {isOpen ? (
-          <FaTimes className="h-6 w-6" />
+          <FaTimes className="h-5 w-5" />
         ) : (
-          <FaBars className="h-6 w-6" />
+          <FaBars className="h-5 w-5" />
         )}
       </button>
 
@@ -55,14 +55,14 @@ const MobileMenu = ({ links }: MobileMenuProps) => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="fixed top-16 left-0 w-full bg-white shadow-lg py-2 z-50"
+            className="fixed top-16 left-0 w-full bg-white shadow-lg py-1 z-50"
           >
             {links.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 text-sm font-medium transition-colors ${
+                className={`block px-4 py-2 text-sm font-medium transition-colors ${
                   pathname === link.href
                     ? 'text-teal-600 bg-teal-50'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'

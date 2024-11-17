@@ -26,14 +26,14 @@ const Navbar = () => {
               alt="DevPet Logo"
               width={300}
               height={100}
-              className="w-auto h-[50px] sm:h-20"
+              className="w-auto h-10 sm:h-[50px]"
               priority
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <nav className="flex space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
+            <nav className="flex space-x-4 lg:space-x-8">
               {links.map((link, index) => (
                 <Link
                   key={index}
