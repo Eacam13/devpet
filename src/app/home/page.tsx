@@ -69,9 +69,9 @@ export default function Home() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className='min-h-[100dvh] bg-gradient-to-b from-white to-green-50 py-6 sm:py-8 md:py-12'
+      className='min-h-screen pt-16 bg-gradient-to-b from-white to-green-50'
     >
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16'>
         <div className='flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 md:gap-12 lg:gap-20'>
           <motion.div 
             variants={itemVariants}

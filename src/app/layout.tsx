@@ -122,10 +122,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <body className={poppins.className}>
+    <html lang="pt-BR" className="h-full">
+      <body className={`${poppins.className} min-h-screen flex flex-col`}>
         <Navbar />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
