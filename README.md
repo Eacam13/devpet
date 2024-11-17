@@ -20,6 +20,57 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- npm (comes with Node.js) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/web-devpet.git
+cd web-devpet
+```
+
+2. Install the dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Project Structure
+
+```
+web-devpet/
+├── app/                # Next.js app directory
+├── public/            # Static files
+├── components/        # React components
+├── styles/           # CSS styles
+└── package.json      # Project dependencies and scripts
+```
+
+### Key Features
+
+- 🎨 Modern UI with Tailwind CSS
+- 🔄 Form handling with react-hook-form
+- ✨ Animations using framer-motion
+- 🛡️ Type safety with TypeScript
+- 📝 Form validation with Zod
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

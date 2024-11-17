@@ -1,19 +1,28 @@
+import { themeDefault } from "./src/themes/themeDefault";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'coral': themeDefault.colors.coral_orange,
+        'turquoise': themeDefault.colors.turquoise_blue,
+        'yellow': themeDefault.colors.light_yellow,
+        'lime': themeDefault.colors.lime_green,
+        'salmon': themeDefault.colors.salmon_pink,
+        'aqua': themeDefault.colors.aqua_green,
+        'gray': {
+          light: themeDefault.colors.light_gray,
+          dark: themeDefault.colors.dark_gray,
+        },
+        'white': themeDefault.colors.pure_white,
       },
     },
   },
   plugins: [],
 };
+
 export default config;
